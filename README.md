@@ -73,6 +73,7 @@ https://github.com/Filiplain/Windows-AMSI-Defender-Bypass
 
 Make sure to define your IP or Domain into the files
 And host a server where all the files are located
+Don't forget the lsitener with the port that you defined in the nishang or any reverse-shell you use.
 
 
 Invokes Map:
