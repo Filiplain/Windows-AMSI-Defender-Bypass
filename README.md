@@ -13,7 +13,7 @@ AMSI fail script,
 -----------------
 fail.ps1:
 ---------
-some of those generated scripts uses the "Amsi Utils", but it gets caught by the AMSI, so i defined it outside of the code
+some of those generated scripts use the "Amsi Utils", but it gets caught by the AMSI, so i defined it outside of the code
 like this:
 
 $am='Amsi'+'U'+'til'+'s' 
