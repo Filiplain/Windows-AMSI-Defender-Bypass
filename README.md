@@ -2,6 +2,7 @@
 
 ::::Bypassing AMSI and getting a Reverse Shell
 ------------------------------------------------------------------------------------
+Perfect for malicious macros, rubber ducky, or a RCE in a Windows System:
 
 To make all these things work, I used a script that disables the AMSI:
 From : https://amsi.fail
